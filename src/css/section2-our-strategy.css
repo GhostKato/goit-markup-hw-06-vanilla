@@ -1,0 +1,91 @@
+/* Section 2 Our Strategy Mobile*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.strategy-icon-container {
+  padding: 24px 100px;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-strategy {
+  display: flex;
+  align-items: center;
+}
+
+.our-strategy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.our-strategy-type {
+  font-size: 36px;
+  line-height: 1.111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.our-strategy-type-description {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Section 2 Our Strategy Tab */
+
+@media screen and (min-width: 768px) {
+  .our-strategy-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .our-strategy-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+/* Section 2 Our Strategy Desktop*/
+
+@media screen and (min-width: 1158px) {
+  .strategy-icon-container {
+    display: flex;
+  }
+  .our-strategy-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .our-strategy-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .our-strategy-type {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .our-strategy-type-description {
+    font-weight: 400;
+  }
+}

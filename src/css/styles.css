@@ -5,21 +5,51 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./section1-hero.css');
+@import url('./section2-our-strategy.css');
+@import url('./section3-our-team.css');
+@import url('./section4-our-portfolio.css');
+@import url('./footer.css');
+@import url('./modal-window.css');
+@import url('./mobile-menu.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  body {
+    font-family: Roboto, sans-serif;
+    color: #434455;
+    background-color: #fff;
+  }
+  .container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .section {
+    padding: 96px 0 96px 0;
+    margin: 0;
+  }
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  /* Tablet */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  /* Desktop */
+
+  @media screen and (min-width: 1158px) {
+    .container {
+      max-width: 1158px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .section {
+      padding: 120px 0 120px 0;
+    }
+  }
 }
