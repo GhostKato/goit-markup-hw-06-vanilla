@@ -201,22 +201,13 @@
 
 .checkbox-text {
   display: inline-block;
+  white-space: nowrap;
 }
 
 .policy-check:checked + .label-policy .checkbox-icon-select {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
-}
-
-.modal-window {
-  width: 408px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.checkbox-icon-select {
-  top: -1px;
 }
 
 .checkbox-text {
