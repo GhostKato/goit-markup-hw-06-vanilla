@@ -1,5 +1,5 @@
-import modalWindow from './js/modal.js';
-import menuWindow from './js/menu-mobile.js';
+import './js/modal.js';
+import './js/menu-mobile.js';
 
 
 
