@@ -28,7 +28,7 @@
   row-gap: 72px;
 }
 
-/* Social-media */
+/* Social-media Mobile*/
 
 .title-social-media {
   font-weight: 500;
@@ -71,7 +71,7 @@
   fill: #f4f4fd;
 }
 
-/* Subscribe */
+/* Subscribe Mobile*/
 
 .subscribe-container {
   display: flex;
